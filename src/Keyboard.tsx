@@ -30,10 +30,10 @@ const KEYS = [
 ];
 
 type KeyboardProps = {
-  disabled?: Boolean;
   activeLetters: string[];
   inactiveLetters: string[];
   addGuessedLetter: (letter: string) => void;
+  disabled?: Boolean;
 };
 
 export default function Keyboard({

@@ -94,11 +94,13 @@ export default function App() {
       <HangmanDrawing
         numberOfGuesses={incorrectLetters.length}
       ></HangmanDrawing>
+
       <HanmanWord
         reveal={isLoser}
         guessedLetters={guessedLetters}
         wordToGuess={wordToGuess}
       ></HanmanWord>
+
       <div style={{ alignSelf: "stretch" }}>
         <Keyboard
           disabled={isWinner || isLoser}
